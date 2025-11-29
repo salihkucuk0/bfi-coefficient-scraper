@@ -1,9 +1,8 @@
 {
   "name": "bfi-scraper",
   "version": "1.0.0",
-  "main": "scripts/scraper.js",
   "type": "module",
   "dependencies": {
-    "cheerio": "^1.0.0"
+    "puppeteer": "^22.0.0"
   }
 }
