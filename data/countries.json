@@ -1,1 +1,387 @@
-[]
+[
+  {
+    "countryRank": 1,
+    "country": "",
+    "totalPoints": 101.672,
+    "seasonPoints": 10.833,
+    "teams": []
+  },
+  {
+    "countryRank": 2,
+    "country": "",
+    "totalPoints": 90.517,
+    "seasonPoints": 9.571,
+    "teams": []
+  },
+  {
+    "countryRank": 3,
+    "country": "",
+    "totalPoints": 84.206,
+    "seasonPoints": 9.25,
+    "teams": []
+  },
+  {
+    "countryRank": 4,
+    "country": "",
+    "totalPoints": 80.975,
+    "seasonPoints": 9.857,
+    "teams": []
+  },
+  {
+    "countryRank": 5,
+    "country": "",
+    "totalPoints": 73.393,
+    "seasonPoints": 8.214,
+    "teams": []
+  },
+  {
+    "countryRank": 6,
+    "country": "",
+    "totalPoints": 64.7,
+    "seasonPoints": 6.75,
+    "teams": []
+  },
+  {
+    "countryRank": 7,
+    "country": "",
+    "totalPoints": 62.067,
+    "seasonPoints": 9.4,
+    "teams": []
+  },
+  {
+    "countryRank": 8,
+    "country": "",
+    "totalPoints": 57.75,
+    "seasonPoints": 6.9,
+    "teams": []
+  },
+  {
+    "countryRank": 9,
+    "country": "",
+    "totalPoints": 47.4,
+    "seasonPoints": 6.6,
+    "teams": []
+  },
+  {
+    "countryRank": 10,
+    "country": "",
+    "totalPoints": 44.3,
+    "seasonPoints": 6.8,
+    "teams": []
+  },
+  {
+    "countryRank": 11,
+    "country": "",
+    "totalPoints": 41.313,
+    "seasonPoints": 7.1,
+    "teams": []
+  },
+  {
+    "countryRank": 12,
+    "country": "",
+    "totalPoints": 40.375,
+    "seasonPoints": 9.375,
+    "teams": []
+  },
+  {
+    "countryRank": 13,
+    "country": "",
+    "totalPoints": 38.388,
+    "seasonPoints": 5.2,
+    "teams": []
+  },
+  {
+    "countryRank": 14,
+    "country": "",
+    "totalPoints": 37.981,
+    "seasonPoints": 8.125,
+    "teams": []
+  },
+  {
+    "countryRank": 15,
+    "country": "",
+    "totalPoints": 33.1,
+    "seasonPoints": 4.6,
+    "teams": []
+  },
+  {
+    "countryRank": 16,
+    "country": "",
+    "totalPoints": 32.85,
+    "seasonPoints": 3.1,
+    "teams": []
+  },
+  {
+    "countryRank": 17,
+    "country": "",
+    "totalPoints": 32.788,
+    "seasonPoints": 9.25,
+    "teams": []
+  },
+  {
+    "countryRank": 18,
+    "country": "",
+    "totalPoints": 30.45,
+    "seasonPoints": 3.4,
+    "teams": []
+  },
+  {
+    "countryRank": 19,
+    "country": "",
+    "totalPoints": 29.375,
+    "seasonPoints": 4.75,
+    "teams": []
+  },
+  {
+    "countryRank": 20,
+    "country": "",
+    "totalPoints": 27.5,
+    "seasonPoints": 2.875,
+    "teams": []
+  },
+  {
+    "countryRank": 21,
+    "country": "",
+    "totalPoints": 24.875,
+    "seasonPoints": 3.75,
+    "teams": []
+  },
+  {
+    "countryRank": 22,
+    "country": "",
+    "totalPoints": 24.5,
+    "seasonPoints": 5,
+    "teams": []
+  },
+  {
+    "countryRank": 23,
+    "country": "",
+    "totalPoints": 24.375,
+    "seasonPoints": 4.625,
+    "teams": []
+  },
+  {
+    "countryRank": 24,
+    "country": "",
+    "totalPoints": 23.375,
+    "seasonPoints": 3.375,
+    "teams": []
+  },
+  {
+    "countryRank": 25,
+    "country": "",
+    "totalPoints": 22.35,
+    "seasonPoints": 4.75,
+    "teams": []
+  },
+  {
+    "countryRank": 26,
+    "country": "",
+    "totalPoints": 22.25,
+    "seasonPoints": 5.125,
+    "teams": []
+  },
+  {
+    "countryRank": 27,
+    "country": "",
+    "totalPoints": 22.219,
+    "seasonPoints": 4.125,
+    "teams": []
+  },
+  {
+    "countryRank": 28,
+    "country": "",
+    "totalPoints": 21.875,
+    "seasonPoints": 2.125,
+    "teams": []
+  },
+  {
+    "countryRank": 29,
+    "country": "",
+    "totalPoints": 19.625,
+    "seasonPoints": 3.75,
+    "teams": []
+  },
+  {
+    "countryRank": 30,
+    "country": "",
+    "totalPoints": 18.299,
+    "seasonPoints": 0,
+    "teams": []
+  },
+  {
+    "countryRank": 31,
+    "country": "",
+    "totalPoints": 17.761,
+    "seasonPoints": 4.667,
+    "teams": []
+  },
+  {
+    "countryRank": 32,
+    "country": "",
+    "totalPoints": 16.021,
+    "seasonPoints": 3.125,
+    "teams": []
+  },
+  {
+    "countryRank": 33,
+    "country": "",
+    "totalPoints": 14.625,
+    "seasonPoints": 1.5,
+    "teams": []
+  },
+  {
+    "countryRank": 34,
+    "country": "",
+    "totalPoints": 13.875,
+    "seasonPoints": 3,
+    "teams": []
+  },
+  {
+    "countryRank": 35,
+    "country": "",
+    "totalPoints": 13.833,
+    "seasonPoints": 3.625,
+    "teams": []
+  },
+  {
+    "countryRank": 36,
+    "country": "",
+    "totalPoints": 13.75,
+    "seasonPoints": 3.625,
+    "teams": []
+  },
+  {
+    "countryRank": 37,
+    "country": "",
+    "totalPoints": 13.375,
+    "seasonPoints": 3,
+    "teams": []
+  },
+  {
+    "countryRank": 38,
+    "country": "",
+    "totalPoints": 13.156,
+    "seasonPoints": 2.75,
+    "teams": []
+  },
+  {
+    "countryRank": 39,
+    "country": "",
+    "totalPoints": 12.875,
+    "seasonPoints": 2,
+    "teams": []
+  },
+  {
+    "countryRank": 40,
+    "country": "",
+    "totalPoints": 9.75,
+    "seasonPoints": 1.75,
+    "teams": []
+  },
+  {
+    "countryRank": 41,
+    "country": "",
+    "totalPoints": 9,
+    "seasonPoints": 2,
+    "teams": []
+  },
+  {
+    "countryRank": 42,
+    "country": "",
+    "totalPoints": 8.5,
+    "seasonPoints": 1,
+    "teams": []
+  },
+  {
+    "countryRank": 43,
+    "country": "",
+    "totalPoints": 8.209,
+    "seasonPoints": 1.625,
+    "teams": []
+  },
+  {
+    "countryRank": 44,
+    "country": "",
+    "totalPoints": 8.125,
+    "seasonPoints": 2.25,
+    "teams": []
+  },
+  {
+    "countryRank": 45,
+    "country": "",
+    "totalPoints": 7.75,
+    "seasonPoints": 1.125,
+    "teams": []
+  },
+  {
+    "countryRank": 46,
+    "country": "",
+    "totalPoints": 7.25,
+    "seasonPoints": 1.75,
+    "teams": []
+  },
+  {
+    "countryRank": 47,
+    "country": "",
+    "totalPoints": 7.167,
+    "seasonPoints": 2.75,
+    "teams": []
+  },
+  {
+    "countryRank": 48,
+    "country": "",
+    "totalPoints": 6.834,
+    "seasonPoints": 2,
+    "teams": []
+  },
+  {
+    "countryRank": 49,
+    "country": "",
+    "totalPoints": 6.625,
+    "seasonPoints": 2.125,
+    "teams": []
+  },
+  {
+    "countryRank": 50,
+    "country": "",
+    "totalPoints": 6.625,
+    "seasonPoints": 0.75,
+    "teams": []
+  },
+  {
+    "countryRank": 51,
+    "country": "",
+    "totalPoints": 6.583,
+    "seasonPoints": 1,
+    "teams": []
+  },
+  {
+    "countryRank": 52,
+    "country": "",
+    "totalPoints": 6.459,
+    "seasonPoints": 2.667,
+    "teams": []
+  },
+  {
+    "countryRank": 53,
+    "country": "",
+    "totalPoints": 6,
+    "seasonPoints": 1.125,
+    "teams": []
+  },
+  {
+    "countryRank": 54,
+    "country": "",
+    "totalPoints": 5.625,
+    "seasonPoints": 0.333,
+    "teams": []
+  },
+  {
+    "countryRank": 55,
+    "country": "",
+    "totalPoints": 2.833,
+    "seasonPoints": 0.833,
+    "teams": []
+  }
+]
