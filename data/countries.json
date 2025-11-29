@@ -1,387 +1,1385 @@
 [
   {
-    "countryRank": 1,
-    "country": "",
+    "rank": 1,
+    "country": "England",
     "totalPoints": 101.672,
     "seasonPoints": 10.833,
-    "teams": []
+    "teams": [
+      {
+        "team": "Arsenal",
+        "value": 16
+      },
+      {
+        "team": "Man. City",
+        "value": 13
+      },
+      {
+        "team": "Chelsea",
+        "value": 13
+      },
+      {
+        "team": "Tottenham",
+        "value": 12
+      },
+      {
+        "team": "Newcastle",
+        "value": 12
+      },
+      {
+        "team": "Liverpool",
+        "value": 12
+      },
+      {
+        "team": "Aston Villa",
+        "value": 8
+      },
+      {
+        "team": "Nottingham",
+        "value": 6
+      },
+      {
+        "team": "Crystal Palace",
+        "value": 5.5
+      }
+    ]
   },
   {
-    "countryRank": 2,
-    "country": "",
+    "rank": 2,
+    "country": "Italy",
     "totalPoints": 90.517,
     "seasonPoints": 9.571,
-    "teams": []
+    "teams": [
+      {
+        "team": "Inter",
+        "value": 14
+      },
+      {
+        "team": "Atalanta BC",
+        "value": 13
+      },
+      {
+        "team": "SSC Napoli",
+        "value": 11
+      },
+      {
+        "team": "Juventus",
+        "value": 11
+      },
+      {
+        "team": "AS Roma",
+        "value": 6
+      },
+      {
+        "team": "Bologna FC",
+        "value": 6
+      },
+      {
+        "team": "Fiorentina",
+        "value": 6
+      }
+    ]
   },
   {
-    "countryRank": 3,
-    "country": "",
+    "rank": 3,
+    "country": "Spain",
     "totalPoints": 84.206,
     "seasonPoints": 9.25,
-    "teams": []
+    "teams": [
+      {
+        "team": "Real Madrid",
+        "value": 14
+      },
+      {
+        "team": "Atlético Madrid",
+        "value": 12
+      },
+      {
+        "team": "Barcelona",
+        "value": 11
+      },
+      {
+        "team": "Athletic Bilbao",
+        "value": 9
+      },
+      {
+        "team": "Villarreal",
+        "value": 7
+      },
+      {
+        "team": "Real Betis",
+        "value": 8
+      },
+      {
+        "team": "Celta de Vigo",
+        "value": 6
+      },
+      {
+        "team": "Vallecano",
+        "value": 7
+      }
+    ]
   },
   {
-    "countryRank": 4,
-    "country": "",
+    "rank": 4,
+    "country": "Germany",
     "totalPoints": 80.975,
     "seasonPoints": 9.857,
-    "teams": []
+    "teams": [
+      {
+        "team": "Bayern",
+        "value": 14
+      },
+      {
+        "team": "Borussia.",
+        "value": 13
+      },
+      {
+        "team": "Leverkusen",
+        "value": 12
+      },
+      {
+        "team": "Eintracht",
+        "value": 9
+      },
+      {
+        "team": "SC Freiburg",
+        "value": 8
+      },
+      {
+        "team": "VfB Stuttgart",
+        "value": 6
+      },
+      {
+        "team": "Mainz",
+        "value": 7
+      }
+    ]
   },
   {
-    "countryRank": 5,
-    "country": "",
+    "rank": 5,
+    "country": "France",
     "totalPoints": 73.393,
     "seasonPoints": 8.214,
-    "teams": []
+    "teams": [
+      {
+        "team": "Paris SG",
+        "value": 14
+      },
+      {
+        "team": "AS Monaco",
+        "value": 11
+      },
+      {
+        "team": "Olympique.",
+        "value": 10
+      },
+      {
+        "team": "Lyon",
+        "value": 8
+      },
+      {
+        "team": "LOSC",
+        "value": 6
+      },
+      {
+        "team": "OGC Nice",
+        "value": 0
+      },
+      {
+        "team": "Strasbourg",
+        "value": 8.5
+      }
+    ]
   },
   {
-    "countryRank": 6,
-    "country": "",
+    "rank": 6,
+    "country": "Netherlands",
     "totalPoints": 64.7,
     "seasonPoints": 6.75,
-    "teams": []
+    "teams": [
+      {
+        "team": "PSV Eindhoven",
+        "value": 12
+      },
+      {
+        "team": "Ajax",
+        "value": 6
+      },
+      {
+        "team": "Utrecht",
+        "value": 6.5
+      },
+      {
+        "team": "Ahead Eagles",
+        "value": 4
+      },
+      {
+        "team": "Feyenoord",
+        "value": 3
+      },
+      {
+        "team": "AZ Alkmaar",
+        "value": 9
+      }
+    ]
   },
   {
-    "countryRank": 7,
-    "country": "",
+    "rank": 7,
+    "country": "Portugal",
     "totalPoints": 62.067,
     "seasonPoints": 9.4,
-    "teams": []
+    "teams": [
+      {
+        "team": "Sporting CP",
+        "value": 13
+      },
+      {
+        "team": "SL Benfica",
+        "value": 11.5
+      },
+      {
+        "team": "SC Braga",
+        "value": 12.5
+      },
+      {
+        "team": "FC Porto",
+        "value": 7
+      },
+      {
+        "team": "CD Santa Clara",
+        "value": 3
+      }
+    ]
   },
   {
-    "countryRank": 8,
-    "country": "",
+    "rank": 8,
+    "country": "Belgium",
     "totalPoints": 57.75,
     "seasonPoints": 6.9,
-    "teams": []
+    "teams": [
+      {
+        "team": "Club Brugge",
+        "value": 13
+      },
+      {
+        "team": "St. Gilloise",
+        "value": 10
+      },
+      {
+        "team": "Genk",
+        "value": 8
+      },
+      {
+        "team": "Anderlecht",
+        "value": 3
+      },
+      {
+        "team": "Charleroi",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 9,
-    "country": "",
+    "rank": 9,
+    "country": "Türkiye",
     "totalPoints": 47.4,
     "seasonPoints": 6.6,
-    "teams": []
+    "teams": [
+      {
+        "team": "Galatasaray",
+        "value": 12
+      },
+      {
+        "team": "Fenerbahçe",
+        "value": 7.5
+      },
+      {
+        "team": "Samsunspor",
+        "value": 7.5
+      },
+      {
+        "team": "Başakşehir",
+        "value": 3.5
+      },
+      {
+        "team": "Beşiktaş",
+        "value": 2.5
+      }
+    ]
   },
   {
-    "countryRank": 10,
-    "country": "",
+    "rank": 10,
+    "country": "Czechia",
     "totalPoints": 44.3,
     "seasonPoints": 6.8,
-    "teams": []
+    "teams": [
+      {
+        "team": "Slavia Praha",
+        "value": 9
+      },
+      {
+        "team": "Viktoria Plzeň",
+        "value": 9
+      },
+      {
+        "team": "Sparta Praha",
+        "value": 9
+      },
+      {
+        "team": "Sigma Olomouc",
+        "value": 5
+      },
+      {
+        "team": "Baník Ostrava",
+        "value": 2
+      }
+    ]
   },
   {
-    "countryRank": 11,
-    "country": "",
+    "rank": 11,
+    "country": "Greece",
     "totalPoints": 41.313,
     "seasonPoints": 7.1,
-    "teams": []
+    "teams": [
+      {
+        "team": "Olympiacos FC",
+        "value": 8
+      },
+      {
+        "team": "Panathinaikos",
+        "value": 9
+      },
+      {
+        "team": "PAOK FC",
+        "value": 8.5
+      },
+      {
+        "team": "AEK Athens",
+        "value": 9.5
+      },
+      {
+        "team": "Aris",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 12,
-    "country": "",
+    "rank": 12,
+    "country": "Poland",
     "totalPoints": 40.375,
     "seasonPoints": 9.375,
-    "teams": []
+    "teams": [
+      {
+        "team": "Jagiellonia",
+        "value": 11
+      },
+      {
+        "team": "Raków",
+        "value": 11
+      },
+      {
+        "team": "Legia Warszawa",
+        "value": 8
+      },
+      {
+        "team": "Lech Poznan",
+        "value": 7.5
+      }
+    ]
   },
   {
-    "countryRank": 13,
-    "country": "",
+    "rank": 13,
+    "country": "Norway",
     "totalPoints": 38.388,
     "seasonPoints": 5.2,
-    "teams": []
+    "teams": [
+      {
+        "team": "Bodø/Glimt",
+        "value": 9
+      },
+      {
+        "team": "SK Brann",
+        "value": 9.5
+      },
+      {
+        "team": "Rosenborg",
+        "value": 4.5
+      },
+      {
+        "team": "Viking FK",
+        "value": 2.5
+      },
+      {
+        "team": "Fredrikstad",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 14,
-    "country": "",
+    "rank": 14,
+    "country": "Denmark",
     "totalPoints": 37.981,
     "seasonPoints": 8.125,
-    "teams": []
+    "teams": [
+      {
+        "team": "København",
+        "value": 14
+      },
+      {
+        "team": "Midtjylland",
+        "value": 13.5
+      },
+      {
+        "team": "Brøndby",
+        "value": 3
+      },
+      {
+        "team": "Silkeborg IF",
+        "value": 2
+      }
+    ]
   },
   {
-    "countryRank": 15,
-    "country": "",
+    "rank": 15,
+    "country": "Switzerland",
     "totalPoints": 33.1,
     "seasonPoints": 4.6,
-    "teams": []
+    "teams": [
+      {
+        "team": "Young Boys",
+        "value": 6
+      },
+      {
+        "team": "FC Basel",
+        "value": 4.5
+      },
+      {
+        "team": "Lausanne",
+        "value": 9.5
+      },
+      {
+        "team": "Servette",
+        "value": 1.5
+      },
+      {
+        "team": "FC Lugano",
+        "value": 1.5
+      }
+    ]
   },
   {
-    "countryRank": 16,
-    "country": "",
+    "rank": 16,
+    "country": "Austria",
     "totalPoints": 32.85,
     "seasonPoints": 3.1,
-    "teams": []
+    "teams": [
+      {
+        "team": "Sturm Graz",
+        "value": 4
+      },
+      {
+        "team": "FC Salzburg",
+        "value": 3.5
+      },
+      {
+        "team": "Rapid Wien",
+        "value": 4
+      },
+      {
+        "team": "Austria Wien",
+        "value": 2.5
+      },
+      {
+        "team": "Wolfsberger AC",
+        "value": 1.5
+      }
+    ]
   },
   {
-    "countryRank": 17,
-    "country": "",
+    "rank": 17,
+    "country": "Cyprus",
     "totalPoints": 32.788,
     "seasonPoints": 9.25,
-    "teams": []
+    "teams": [
+      {
+        "team": "Paphos FC",
+        "value": 16
+      },
+      {
+        "team": "AEK Larnaca",
+        "value": 9.5
+      },
+      {
+        "team": "Omonia",
+        "value": 9
+      },
+      {
+        "team": "Aris Limassol",
+        "value": 2.5
+      }
+    ]
   },
   {
-    "countryRank": 18,
-    "country": "",
+    "rank": 18,
+    "country": "Scotland",
     "totalPoints": 30.45,
     "seasonPoints": 3.4,
-    "teams": []
+    "teams": [
+      {
+        "team": "Celtic FC",
+        "value": 6
+      },
+      {
+        "team": "Rangers FC",
+        "value": 3.5
+      },
+      {
+        "team": "Aberdeen",
+        "value": 2.5
+      },
+      {
+        "team": "Dundee Utd",
+        "value": 3
+      },
+      {
+        "team": "Hibernian",
+        "value": 2
+      }
+    ]
   },
   {
-    "countryRank": 19,
-    "country": "",
+    "rank": 19,
+    "country": "Sweden",
     "totalPoints": 29.375,
     "seasonPoints": 4.75,
-    "teams": []
+    "teams": [
+      {
+        "team": "Malmö FF",
+        "value": 7.5
+      },
+      {
+        "team": "Häcken",
+        "value": 6.5
+      },
+      {
+        "team": "AIK",
+        "value": 3
+      },
+      {
+        "team": "Hammarby IF",
+        "value": 2
+      }
+    ]
   },
   {
-    "countryRank": 20,
-    "country": "",
+    "rank": 20,
+    "country": "Israel",
     "totalPoints": 27.5,
     "seasonPoints": 2.875,
-    "teams": []
+    "teams": [
+      {
+        "team": "M. Tel-Aviv",
+        "value": 4.5
+      },
+      {
+        "team": "Beitar",
+        "value": 3
+      },
+      {
+        "team": "M. Haifa",
+        "value": 2.5
+      },
+      {
+        "team": "H. Beer-Sheva",
+        "value": 1.5
+      }
+    ]
   },
   {
-    "countryRank": 21,
-    "country": "",
+    "rank": 21,
+    "country": "Croatia",
     "totalPoints": 24.875,
     "seasonPoints": 3.75,
-    "teams": []
+    "teams": [
+      {
+        "team": "Dinamo Zagreb",
+        "value": 5
+      },
+      {
+        "team": "HNK Rijeka",
+        "value": 6.5
+      },
+      {
+        "team": "Hajduk Split",
+        "value": 2.5
+      },
+      {
+        "team": "NK Varaždin ŠN",
+        "value": 1
+      }
+    ]
   },
   {
-    "countryRank": 22,
-    "country": "",
+    "rank": 22,
+    "country": "Romania",
     "totalPoints": 24.5,
     "seasonPoints": 5,
-    "teams": []
+    "teams": [
+      {
+        "team": "FCSB",
+        "value": 6.5
+      },
+      {
+        "team": "CS Craiova",
+        "value": 9
+      },
+      {
+        "team": "CFR Cluj",
+        "value": 4
+      },
+      {
+        "team": "Universitatea.",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 23,
-    "country": "",
+    "rank": 23,
+    "country": "Hungary",
     "totalPoints": 24.375,
     "seasonPoints": 4.625,
-    "teams": []
+    "teams": [
+      {
+        "team": "Ferencváros",
+        "value": 12.5
+      },
+      {
+        "team": "Győri ETO",
+        "value": 3
+      },
+      {
+        "team": "Paksi SE",
+        "value": 3
+      },
+      {
+        "team": "Puskás FC",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 24,
-    "country": "",
+    "rank": 24,
+    "country": "Serbia",
     "totalPoints": 23.375,
     "seasonPoints": 3.375,
-    "teams": []
+    "teams": [
+      {
+        "team": "Crvena Zvezda",
+        "value": 9
+      },
+      {
+        "team": "Partizan",
+        "value": 4
+      },
+      {
+        "team": "Radnički.",
+        "value": 0.5
+      },
+      {
+        "team": "FK Novi Pazar",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 25,
-    "country": "",
+    "rank": 25,
+    "country": "Ukraine",
     "totalPoints": 22.35,
     "seasonPoints": 4.75,
-    "teams": []
+    "teams": [
+      {
+        "team": "Shakhtar",
+        "value": 12
+      },
+      {
+        "team": "Dynamo Kyiv",
+        "value": 5
+      },
+      {
+        "team": "Zhytomyr",
+        "value": 2
+      },
+      {
+        "team": "FC Olexandriya",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 26,
-    "country": "",
+    "rank": 26,
+    "country": "Azerbaijan",
     "totalPoints": 22.25,
     "seasonPoints": 5.125,
-    "teams": []
+    "teams": [
+      {
+        "team": "Qarabag FK",
+        "value": 16
+      },
+      {
+        "team": "Sabah FK",
+        "value": 2.5
+      },
+      {
+        "team": "Araz",
+        "value": 1.5
+      },
+      {
+        "team": "Zira FK",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 27,
-    "country": "",
+    "rank": 27,
+    "country": "Slovenia",
     "totalPoints": 22.219,
     "seasonPoints": 4.125,
-    "teams": []
+    "teams": [
+      {
+        "team": "NK Celje",
+        "value": 11
+      },
+      {
+        "team": "O. Ljubljana",
+        "value": 3.5
+      },
+      {
+        "team": "FC Koper",
+        "value": 1.5
+      },
+      {
+        "team": "NK Maribor",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 28,
-    "country": "",
+    "rank": 28,
+    "country": "Slovakia",
     "totalPoints": 21.875,
     "seasonPoints": 2.125,
-    "teams": []
+    "teams": [
+      {
+        "team": "Slovan.",
+        "value": 4.5
+      },
+      {
+        "team": "Spartak Trnava",
+        "value": 3.5
+      },
+      {
+        "team": "FC Košice",
+        "value": 0.5
+      },
+      {
+        "team": "MŠK Žilina",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 29,
-    "country": "",
+    "rank": 29,
+    "country": "Bulgaria",
     "totalPoints": 19.625,
     "seasonPoints": 3.75,
-    "teams": []
+    "teams": [
+      {
+        "team": "Ludogorets",
+        "value": 8.5
+      },
+      {
+        "team": "Levski",
+        "value": 3.5
+      },
+      {
+        "team": "Arda Kardzhali",
+        "value": 3
+      },
+      {
+        "team": "Cherno More.",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 30,
-    "country": "",
+    "rank": 30,
+    "country": "Russia",
     "totalPoints": 18.299,
     "seasonPoints": 0,
     "teams": []
   },
   {
-    "countryRank": 31,
-    "country": "",
+    "rank": 31,
+    "country": "Ireland",
     "totalPoints": 17.761,
     "seasonPoints": 4.667,
-    "teams": []
+    "teams": [
+      {
+        "team": "Shelbourne FC",
+        "value": 5.5
+      },
+      {
+        "team": "Shamrock",
+        "value": 5
+      },
+      {
+        "team": "St Patrick's",
+        "value": 3.5
+      }
+    ]
   },
   {
-    "countryRank": 32,
-    "country": "",
+    "rank": 32,
+    "country": "Iceland",
     "totalPoints": 16.021,
     "seasonPoints": 3.125,
-    "teams": []
+    "teams": [
+      {
+        "team": "Breidablik",
+        "value": 5.5
+      },
+      {
+        "team": "Víkingur",
+        "value": 4
+      },
+      {
+        "team": "Valur",
+        "value": 2.5
+      },
+      {
+        "team": "KA Akureyri",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 33,
-    "country": "",
+    "rank": 33,
+    "country": "Moldova",
     "totalPoints": 14.625,
     "seasonPoints": 1.5,
-    "teams": []
+    "teams": [
+      {
+        "team": "FC Milsami",
+        "value": 3
+      },
+      {
+        "team": "FC Sheriff",
+        "value": 1.5
+      },
+      {
+        "team": "CS Petrocub",
+        "value": 1
+      },
+      {
+        "team": "Zimbru",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 34,
-    "country": "",
+    "rank": 34,
+    "country": "Armenia",
     "totalPoints": 13.875,
     "seasonPoints": 3,
-    "teams": []
+    "teams": [
+      {
+        "team": "FC Noah",
+        "value": 8.5
+      },
+      {
+        "team": "Pyunik",
+        "value": 2
+      },
+      {
+        "team": "Ararat-Armenia",
+        "value": 1.5
+      },
+      {
+        "team": "FC Urartu",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 35,
-    "country": "",
+    "rank": 35,
+    "country": "Kosovo",
     "totalPoints": 13.833,
     "seasonPoints": 3.625,
-    "teams": []
+    "teams": [
+      {
+        "team": "Drita Gjilan",
+        "value": 10
+      },
+      {
+        "team": "Ballkani",
+        "value": 2.5
+      },
+      {
+        "team": "Prishtina KF",
+        "value": 2
+      },
+      {
+        "team": "Malisheva",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 36,
-    "country": "",
+    "rank": 36,
+    "country": "Kazakhstan",
     "totalPoints": 13.75,
     "seasonPoints": 3.625,
-    "teams": []
+    "teams": [
+      {
+        "team": "Kairat",
+        "value": 11.5
+      },
+      {
+        "team": "Astana",
+        "value": 1.5
+      },
+      {
+        "team": "Aktobe",
+        "value": 1
+      },
+      {
+        "team": "Ordabasy",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 37,
-    "country": "",
+    "rank": 37,
+    "country": "Finland",
     "totalPoints": 13.375,
     "seasonPoints": 3,
-    "teams": []
+    "teams": [
+      {
+        "team": "Kuopion PS",
+        "value": 8.5
+      },
+      {
+        "team": "HJK",
+        "value": 2
+      },
+      {
+        "team": "Ilves Tampere",
+        "value": 1.5
+      },
+      {
+        "team": "Seinäjoki",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 38,
-    "country": "",
+    "rank": 38,
+    "country": "Bosnia-Herzegovina",
     "totalPoints": 13.156,
     "seasonPoints": 2.75,
-    "teams": []
+    "teams": [
+      {
+        "team": "Zrinjski",
+        "value": 8.5
+      },
+      {
+        "team": "FK Sarajevo",
+        "value": 1
+      },
+      {
+        "team": "B. Banja Luka",
+        "value": 1
+      },
+      {
+        "team": "Željezničar.",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 39,
-    "country": "",
+    "rank": 39,
+    "country": "Latvia",
     "totalPoints": 12.875,
     "seasonPoints": 2,
-    "teams": []
+    "teams": [
+      {
+        "team": "Riga FC",
+        "value": 3.5
+      },
+      {
+        "team": "RFS Riga",
+        "value": 2.5
+      },
+      {
+        "team": "Daugava.",
+        "value": 1
+      },
+      {
+        "team": "Auda",
+        "value": 1
+      }
+    ]
   },
   {
-    "countryRank": 40,
-    "country": "",
+    "rank": 40,
+    "country": "Faroe Islands",
     "totalPoints": 9.75,
     "seasonPoints": 1.75,
-    "teams": []
+    "teams": [
+      {
+        "team": "KI Klaksvik",
+        "value": 4.5
+      },
+      {
+        "team": "NSÍ Runavík",
+        "value": 1
+      },
+      {
+        "team": "Vikingur",
+        "value": 1
+      },
+      {
+        "team": "HB Tórshavn",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 41,
-    "country": "",
+    "rank": 41,
+    "country": "Malta",
     "totalPoints": 9,
     "seasonPoints": 2,
-    "teams": []
+    "teams": [
+      {
+        "team": "Hamrun",
+        "value": 4.5
+      },
+      {
+        "team": "Floriana FC",
+        "value": 2.5
+      },
+      {
+        "team": "Birkirkara",
+        "value": 1
+      },
+      {
+        "team": "Hibernians",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 42,
-    "country": "",
+    "rank": 42,
+    "country": "Liechtenstein",
     "totalPoints": 8.5,
     "seasonPoints": 1,
-    "teams": []
+    "teams": [
+      {
+        "team": "FC Vaduz",
+        "value": 1
+      }
+    ]
   },
   {
-    "countryRank": 43,
-    "country": "",
+    "rank": 43,
+    "country": "Estonia",
     "totalPoints": 8.209,
     "seasonPoints": 1.625,
-    "teams": []
+    "teams": [
+      {
+        "team": "Levadia",
+        "value": 2.5
+      },
+      {
+        "team": "Kalju",
+        "value": 2
+      },
+      {
+        "team": "Paide.",
+        "value": 2
+      },
+      {
+        "team": "Flora",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 44,
-    "country": "",
+    "rank": 44,
+    "country": "Albania",
     "totalPoints": 8.125,
     "seasonPoints": 2.25,
-    "teams": []
+    "teams": [
+      {
+        "team": "Egnatia",
+        "value": 3.5
+      },
+      {
+        "team": "Dinamo Tiranë",
+        "value": 3
+      },
+      {
+        "team": "FK Vllaznia",
+        "value": 2
+      },
+      {
+        "team": "Partizani",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 45,
-    "country": "",
+    "rank": 45,
+    "country": "Lithuania",
     "totalPoints": 7.75,
     "seasonPoints": 1.125,
-    "teams": []
+    "teams": [
+      {
+        "team": "Kauno Žalgiris",
+        "value": 3
+      },
+      {
+        "team": "Žalgiris",
+        "value": 1.5
+      },
+      {
+        "team": "Hegelmann",
+        "value": 0
+      },
+      {
+        "team": "FK Banga",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 46,
-    "country": "",
+    "rank": 46,
+    "country": "Northern Ireland",
     "totalPoints": 7.25,
     "seasonPoints": 1.75,
-    "teams": []
+    "teams": [
+      {
+        "team": "Linfield",
+        "value": 3
+      },
+      {
+        "team": "Larne FC",
+        "value": 2.5
+      },
+      {
+        "team": "Dungannon Swifts",
+        "value": 1
+      },
+      {
+        "team": "Cliftonville",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 47,
-    "country": "",
+    "rank": 47,
+    "country": "North Macedonia",
     "totalPoints": 7.167,
     "seasonPoints": 2.75,
-    "teams": []
+    "teams": [
+      {
+        "team": "Shkëndija",
+        "value": 7.5
+      },
+      {
+        "team": "FK Vardar",
+        "value": 2.5
+      },
+      {
+        "team": "Sileks",
+        "value": 1
+      },
+      {
+        "team": "Rabotnicki",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 48,
-    "country": "",
+    "rank": 48,
+    "country": "Andorra",
     "totalPoints": 6.834,
     "seasonPoints": 2,
-    "teams": []
+    "teams": [
+      {
+        "team": "Escaldes",
+        "value": 2.5
+      },
+      {
+        "team": "FC Santa Coloma",
+        "value": 2
+      },
+      {
+        "team": "Inter Club d.",
+        "value": 1.5
+      }
+    ]
   },
   {
-    "countryRank": 49,
-    "country": "",
+    "rank": 49,
+    "country": "Belarus",
     "totalPoints": 6.625,
     "seasonPoints": 2.125,
-    "teams": []
+    "teams": [
+      {
+        "team": "Neman Grodno",
+        "value": 4.5
+      },
+      {
+        "team": "Torpedo Zhodino",
+        "value": 2.5
+      },
+      {
+        "team": "Dinamo Brest",
+        "value": 1
+      },
+      {
+        "team": "Dinamo Minsk",
+        "value": 0.5
+      }
+    ]
   },
   {
-    "countryRank": 50,
-    "country": "",
+    "rank": 50,
+    "country": "Luxembourg",
     "totalPoints": 6.625,
     "seasonPoints": 0.75,
-    "teams": []
+    "teams": [
+      {
+        "team": "Differdange",
+        "value": 3
+      },
+      {
+        "team": "Dudelange",
+        "value": 0
+      },
+      {
+        "team": "RFCU Luxemburg",
+        "value": 0
+      },
+      {
+        "team": "UNA Strassen",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 51,
-    "country": "",
+    "rank": 51,
+    "country": "Montenegro",
     "totalPoints": 6.583,
     "seasonPoints": 1,
-    "teams": []
+    "teams": [
+      {
+        "team": "FK Sutjeska",
+        "value": 1
+      },
+      {
+        "team": "Podgorica",
+        "value": 1
+      },
+      {
+        "team": "FK Dečić Tuzi",
+        "value": 1
+      }
+    ]
   },
   {
-    "countryRank": 52,
-    "country": "",
+    "rank": 52,
+    "country": "Gibraltar",
     "totalPoints": 6.459,
     "seasonPoints": 2.667,
-    "teams": []
+    "teams": [
+      {
+        "team": "Lincoln",
+        "value": 6
+      },
+      {
+        "team": "St. Joseph's FC",
+        "value": 2
+      },
+      {
+        "team": "FCB Magpies",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 53,
-    "country": "",
+    "rank": 53,
+    "country": "Georgia",
     "totalPoints": 6,
     "seasonPoints": 1.125,
-    "teams": []
+    "teams": [
+      {
+        "team": "Dila",
+        "value": 2.5
+      },
+      {
+        "team": "Torpedo Kutaisi",
+        "value": 1.5
+      },
+      {
+        "team": "Iberia 1999",
+        "value": 0.5
+      },
+      {
+        "team": "Spaeri",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 54,
-    "country": "",
+    "rank": 54,
+    "country": "Wales",
     "totalPoints": 5.625,
     "seasonPoints": 0.333,
-    "teams": []
+    "teams": [
+      {
+        "team": "Penybont FC",
+        "value": 0.5
+      },
+      {
+        "team": "TNS",
+        "value": 0.5
+      },
+      {
+        "team": "Haverfordwest.",
+        "value": 0
+      }
+    ]
   },
   {
-    "countryRank": 55,
-    "country": "",
+    "rank": 55,
+    "country": "San Marino",
     "totalPoints": 2.833,
     "seasonPoints": 0.833,
-    "teams": []
+    "teams": [
+      {
+        "team": "SP Tre Fiori",
+        "value": 1
+      },
+      {
+        "team": "SS Virtus",
+        "value": 1
+      },
+      {
+        "team": "La Fiorita",
+        "value": 0.5
+      }
+    ]
   }
 ]
