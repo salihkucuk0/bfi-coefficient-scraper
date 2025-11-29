@@ -1,58 +1,33 @@
-name: BFI Scraper
+name: Scrape UEFA Data
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 */6 * * *"   # 6 saatte bir (istersen değiştir)
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Reponun klonlanması
+      - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
-      - name: Node kurulumu
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 20
 
-      - name: Puppeteer için bağımlılıkların kurulması
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            libnss3 \
-            libatk1.0-0 \
-            libcups2 \
-            libxss1 \
-            libasound2t64 \
-            libatk-bridge2.0-0 \
-            libgtk-3-0 \
-            libx11-xcb1 \
-            libxcb-dri3-0 \
-            libdrm2 \
-            libgbm1 \
-            libxdamage1 \
-            libxcomposite1 \
-            libxrandr2 \
-            libxkbcommon0 \
-            libpango-1.0-0 \
-            libcairo2
+      - name: Install dependencies
+        run: npm install puppeteer jsdom
 
-      - name: NPM install
-        run: npm install
-
-      - name: Scraper çalıştırılıyor
+      - name: Run scraper
         run: node scripts/scraper.js
 
-      - name: Commit changes (countries.json + debug.html)
+      - name: Commit & Push
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           git add data/countries.json
-          git add data/debug.html
-          git commit -m "Auto update scraped data" || echo "No changes"
+          git commit -m "Auto update countries.json" || echo "No changes"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
