@@ -1,0 +1,44 @@
+name: Update Countries Data
+
+on:
+  workflow_dispatch:  # Elle çalıştırma
+  schedule:
+    - cron: "*/15 17-23 * * 2-4"  
+    # Açıklama:
+    # UTC 17-23 arası → Türkiye 20:00 - 02:00
+    # Günler: Salı=2, Çarşamba=3, Perşembe=4
+    # Her 15 dakikada bir
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Node kur
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Puppeteer bağımlılıkları kur
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libx11-xcb1 libxcomposite1 libxcursor1 \
+            libxdamage1 libxi6 libxtst6 libnss3 libcups2 libdrm2 \
+            libxrandr2 libgbm1 libasound2 libpangocairo-1.0-0 \
+            libatk1.0-0 libatk-bridge2.0-0 libgtk-3-0
+
+      - name: NPM Install
+        run: npm install
+
+      - name: Scraper'ı çalıştır
+        run: node scripts/scraper.js
+
+      - name: Değişiklikleri commit et
+        run: |
+          git config --local user.email "github-actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add data/countries.json
+          git commit -m "Auto update countries" || echo "No changes"
+          git push
