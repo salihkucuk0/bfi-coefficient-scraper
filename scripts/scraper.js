@@ -1,16 +1,19 @@
 import fs from "fs";
 import https from "https";
-import * as cheerio from "cheerio";
+import cheerio from "cheerio";
 
 function fetchHtml(url) {
   return new Promise((resolve, reject) => {
-    https.get(url, { headers: { "User-Agent": "Mozilla/5.0" } }, (res) => {
-      let data = "";
-
-      res.on("data", (chunk) => (data += chunk));
-      res.on("end", () => resolve(data));
-      res.on("error", reject);
-    });
+    https.get(
+      url,
+      { headers: { "User-Agent": "Mozilla/5.0" } },
+      (res) => {
+        let data = "";
+        res.on("data", (chunk) => (data += chunk));
+        res.on("end", () => resolve(data));
+        res.on("error", reject);
+      }
+    );
   });
 }
 
@@ -24,29 +27,31 @@ async function scrape() {
 
   rows.each((i, row) => {
     const tds = $(row).find("td");
-    if (tds.length < 5) return;
+    if (tds.length < 8) return;
 
     const rank = Number($(tds[0]).text().trim());
     if (!rank) return;
 
-    // ⭐ ÜLKE ADI DOĞRU KAYNAK → IMG ALT
-    const countryName =
-      $(tds[1]).find("img").attr("alt")?.trim() || "";
+    const countryName = $(tds[1]).text().trim();
+    const totalPoints = Number($(tds[2]).text().trim());
+    const seasonPoints = Number($(tds[3]).text().trim());
 
-    const totalPoints = Number($(tds[2]).text().trim().replace(",", "."));
-    const seasonPoints = Number($(tds[3]).text().trim().replace(",", "."));
-
-    // ⭐ TAKIMLAR
+    // ⭐ DOĞRU TAKIMLAR BURADA
+    const teamBox = $(tds[7]);
     const teams = [];
-    $(tds[4])
-      .find("a")
-      .each((_, a) => {
-        const raw = $(a).text().trim();
-        const parts = raw.split(" ");
-        const value = Number(parts.pop());
-        const name = parts.join(" ");
-        if (!isNaN(value) && name) teams.push({ team: name, value });
-      });
+
+    teamBox.find("a").each((_, a) => {
+      const txt = $(a).text().trim();
+
+      // örnek: "Arsenal 16"
+      const parts = txt.split(/\s+/);
+      const value = Number(parts.pop());
+      const name = parts.join(" ");
+
+      if (!isNaN(value)) {
+        teams.push({ team: name, value });
+      }
+    });
 
     result.push({
       countryRank: rank,
