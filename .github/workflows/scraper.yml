@@ -1,22 +1,22 @@
-name: BFI Scraper
+name: Scrape Coefficients
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: "*/30 * * * *"
+  workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 20   # 🔥 BURASI EN KRİTİK!
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
@@ -25,9 +25,7 @@ jobs:
         run: node scripts/scraper.js
 
       - name: Commit changes
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add data/countries.json
-          git commit -m "Auto update countries.json" || echo "No changes"
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto update countries.json"
+          file_pattern: data/countries.json
