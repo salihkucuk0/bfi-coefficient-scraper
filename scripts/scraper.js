@@ -1,16 +1,22 @@
 import fs from "fs";
+import https from "https";
 import * as cheerio from "cheerio";
 
-const URL = "https://www.football-coefficient.eu/";
+function fetchHtml(url) {
+  return new Promise((resolve, reject) => {
+    https.get(url, { headers: { "User-Agent": "Mozilla/5.0" } }, (res) => {
+      let data = "";
 
-async function scrapeCountries() {
-  const res = await fetch(URL, {
-    headers: {
-      "User-Agent": "Mozilla/5.0",
-    },
+      res.on("data", (chunk) => (data += chunk));
+      res.on("end", () => resolve(data));
+      res.on("error", reject);
+    });
   });
-  const html = await res.text();
+}
 
+async function scrape() {
+  const url = "https://www.football-coefficient.eu/";
+  const html = await fetchHtml(url);
   const $ = cheerio.load(html);
 
   const rows = $("table.el-table tbody tr");
@@ -21,25 +27,22 @@ async function scrapeCountries() {
     if (tds.length < 5) return;
 
     const rank = Number($(tds[0]).text().trim());
-    if (!rank || isNaN(rank)) return;
+    if (!rank) return;
 
     const countryName = $(tds[1]).text().trim();
     const totalPoints = Number($(tds[2]).text().trim());
     const seasonPoints = Number($(tds[3]).text().trim());
 
-    // TAKIMLAR
     const teams = [];
-    const teamLinks = $(tds[4]).find("a");
-
-    teamLinks.each((j, a) => {
-      const raw = $(a).text().trim();  
-      const parts = raw.split(" ");
-      const value = Number(parts.pop());
-      const name = parts.join(" ");
-      if (!isNaN(value)) {
-        teams.push({ team: name, value });
-      }
-    });
+    $(tds[4])
+      .find("a")
+      .each((_, a) => {
+        const raw = $(a).text().trim();
+        const parts = raw.split(" ");
+        const value = Number(parts.pop());
+        const name = parts.join(" ");
+        if (!isNaN(value)) teams.push({ team: name, value });
+      });
 
     result.push({
       countryRank: rank,
@@ -50,15 +53,8 @@ async function scrapeCountries() {
     });
   });
 
-  return result;
+  fs.writeFileSync("./data/countries.json", JSON.stringify(result, null, 2));
+  console.log("✔ countries.json güncellendi! Ülke sayısı:", result.length);
 }
 
-async function run() {
-  const countries = await scrapeCountries();
-
-  fs.writeFileSync("./data/countries.json", JSON.stringify(countries, null, 2));
-
-  console.log("✔ countries.json güncellendi! Ülke sayısı:", countries.length);
-}
-
-run();
+scrape();
