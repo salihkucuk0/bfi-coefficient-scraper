@@ -1,9 +1,9 @@
 name: BFI Scraper
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"   # her 30 dakikada bir
-  workflow_dispatch:         # manuel çalıştırma
+    - cron: "*/30 * * * *"
 
 jobs:
   scrape:
@@ -13,18 +13,18 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: Install Node
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20   # 🔥 BURASI EN KRİTİK!
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Run Scraper
+      - name: Run scraper
         run: node scripts/scraper.js
 
-      - name: Commit and Push Changes
+      - name: Commit changes
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
