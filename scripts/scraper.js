@@ -1,6 +1,6 @@
 import fs from "fs";
 import https from "https";
-import cheerio from "cheerio";
+import * as cheerio from "cheerio";
 
 function fetchHtml(url) {
   return new Promise((resolve, reject) => {
@@ -36,14 +36,13 @@ async function scrape() {
     const totalPoints = Number($(tds[2]).text().trim());
     const seasonPoints = Number($(tds[3]).text().trim());
 
-    // ⭐ DOĞRU TAKIMLAR BURADA
+    // doğru takım sütunu = tds[7]
     const teamBox = $(tds[7]);
     const teams = [];
 
     teamBox.find("a").each((_, a) => {
       const txt = $(a).text().trim();
 
-      // örnek: "Arsenal 16"
       const parts = txt.split(/\s+/);
       const value = Number(parts.pop());
       const name = parts.join(" ");
