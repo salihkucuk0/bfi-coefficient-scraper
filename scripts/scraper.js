@@ -1,64 +1,72 @@
 import fs from "fs";
-import puppeteer from "puppeteer";
+import https from "https";
+import * as cheerio from "cheerio";
+import path from "path";
+
+const dataDir = "./data";
+if (!fs.existsSync(dataDir)) {
+  fs.mkdirSync(dataDir, { recursive: true });
+}
+
+function fetchHtml(url) {
+  return new Promise((resolve, reject) => {
+    https.get(url, { headers: { "User-Agent": "Mozilla/5.0" } }, (res) => {
+      let data = "";
+      res.on("data", (chunk) => (data += chunk));
+      res.on("end", () => resolve(data));
+      res.on("error", reject);
+    });
+  });
+}
 
 async function scrape() {
-  const browser = await puppeteer.launch({
-    headless: "new",
-    args: ["--no-sandbox", "--disable-setuid-sandbox"]
-  });
+  const url = "https://www.football-coefficient.eu/";
 
-  const page = await browser.newPage();
+  console.log("➡ HTML çekiliyor...");
+  const html = await fetchHtml(url);
 
-  await page.setUserAgent(
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
-  );
-
-  await page.goto("https://www.football-coefficient.eu/", {
-    waitUntil: "networkidle2",
-  });
-
-  // DEBUG 1 → HTML dump
-  const html = await page.content();
+  // DEBUG HTML
   fs.writeFileSync("./data/debug.html", html);
+  console.log("✔ debug.html kaydedildi!");
 
-  // DEBUG 2 → Ekran görüntüsü
-  await page.screenshot({ path: "./data/screen.png", fullPage: true });
+  const $ = cheerio.load(html);
 
-  // tablo varsa scrape etmeye devam
-  const data = await page.evaluate(() => {
-    const rows = document.querySelectorAll("table.el-table tbody tr");
-    const results = [];
+  const rows = $("table.el-table tbody tr");
+  const result = [];
 
-    rows.forEach((row) => {
-      const tds = row.querySelectorAll("td");
-      if (tds.length < 8) return;
+  rows.each((i, row) => {
+    const tds = $(row).find("td");
+    if (tds.length < 5) return;
 
-      const rank = Number(tds[0].innerText.trim());
-      if (!rank) return;
+    const rank = Number($(tds[0]).text().trim());
+    if (!rank) return;
 
-      const country = tds[1].innerText.trim();
-      const totalPoints = Number(tds[2].innerText.trim());
-      const seasonPoints = Number(tds[3].innerText.trim());
+    const countryName = $(tds[1]).find("img").attr("alt")?.trim() || "";
+    const totalPoints = Number($(tds[2]).text().trim());
+    const seasonPoints = Number($(tds[3]).text().trim());
 
-      const teams = [];
-      tds[7].querySelectorAll("a").forEach((a) => {
-        const text = a.innerText.trim();
-        const parts = text.split(/\s+/);
+    const teams = [];
+    $(tds[4])
+      .find("a")
+      .each((_, a) => {
+        const raw = $(a).text().trim();
+        const parts = raw.split(" ");
         const value = Number(parts.pop());
         const name = parts.join(" ");
         if (!isNaN(value)) teams.push({ team: name, value });
       });
 
-      results.push({ countryRank: rank, country, totalPoints, seasonPoints, teams });
+    result.push({
+      countryRank: rank,
+      country: countryName,
+      totalPoints,
+      seasonPoints,
+      teams,
     });
-
-    return results;
   });
 
-  await browser.close();
-
-  fs.writeFileSync("./data/countries.json", JSON.stringify(data, null, 2));
-  console.log("SCRAPE RESULT:", data.length);
+  fs.writeFileSync("./data/countries.json", JSON.stringify(result, null, 2));
+  console.log("✔ countries.json oluşturuldu:", result.length);
 }
 
 scrape();
