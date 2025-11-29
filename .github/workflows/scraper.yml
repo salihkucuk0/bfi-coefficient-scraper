@@ -1,44 +1,33 @@
-name: Update Countries Data
+name: BFI Scraper
 
 on:
-  workflow_dispatch:  # Elle çalıştırma
   schedule:
-    - cron: "*/15 17-23 * * 2-4"  
-    # Açıklama:
-    # UTC 17-23 arası → Türkiye 20:00 - 02:00
-    # Günler: Salı=2, Çarşamba=3, Perşembe=4
-    # Her 15 dakikada bir
+    - cron: "*/30 * * * *"   # her 30 dakikada bir
+  workflow_dispatch:         # manuel çalıştırma
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repo
+        uses: actions/checkout@v3
 
-      - name: Node kur
+      - name: Install Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Puppeteer bağımlılıkları kur
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libx11-xcb1 libxcomposite1 libxcursor1 \
-            libxdamage1 libxi6 libxtst6 libnss3 libcups2 libdrm2 \
-            libxrandr2 libgbm1 libasound2 libpangocairo-1.0-0 \
-            libatk1.0-0 libatk-bridge2.0-0 libgtk-3-0
-
-      - name: NPM Install
+      - name: Install Dependencies
         run: npm install
 
-      - name: Scraper'ı çalıştır
+      - name: Run Scraper
         run: node scripts/scraper.js
 
-      - name: Değişiklikleri commit et
+      - name: Commit and Push Changes
         run: |
-          git config --local user.email "github-actions@github.com"
-          git config --local user.name "GitHub Actions"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           git add data/countries.json
-          git commit -m "Auto update countries" || echo "No changes"
+          git commit -m "Auto update countries.json" || echo "No changes"
           git push
