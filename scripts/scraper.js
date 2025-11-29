@@ -29,27 +29,23 @@ async function scrape() {
     const rank = Number($(tds[0]).text().trim());
     if (!rank) return;
 
-    // ✔ ÜLKE ADINI DOĞRU AL (sadece <a> içindeki text)
-    let countryName = $(tds[1]).find("a").text().trim();
-    if (!countryName) countryName = $(tds[1]).text().trim();
+    // ⭐ ÜLKE ADI DOĞRU KAYNAK → IMG ALT
+    const countryName =
+      $(tds[1]).find("img").attr("alt")?.trim() || "";
 
-    // ✔ SAYILARI TEMİZLE (format: 101.672 gibi)
     const totalPoints = Number($(tds[2]).text().trim().replace(",", "."));
     const seasonPoints = Number($(tds[3]).text().trim().replace(",", "."));
 
-    // ✔ TAKIM VERİLERİNİ DOĞRU ÇEK
+    // ⭐ TAKIMLAR
     const teams = [];
     $(tds[4])
       .find("a")
       .each((_, a) => {
-        const raw = $(a).text().trim(); // "Arsenal 16"
+        const raw = $(a).text().trim();
         const parts = raw.split(" ");
-        const value = Number(parts.pop()); // 16
-        const name = parts.join(" "); // Arsenal
-
-        if (!isNaN(value) && name.length > 0) {
-          teams.push({ team: name, value });
-        }
+        const value = Number(parts.pop());
+        const name = parts.join(" ");
+        if (!isNaN(value) && name) teams.push({ team: name, value });
       });
 
     result.push({
